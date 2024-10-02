@@ -1,0 +1,39 @@
+1. Download python
+2. YT tutorial - https://www.youtube.com/watch?v=VuETrwKYLTM&list=PLsyeobzWxl7r2ukVgTqIQcl-1T0C2mzau&index=2
+3. Django issue
+
+'mkvirtualenv' is not recognized as an internal or external command,
+operable program or batch file.
+
+Note: 
+1. Source = https://stackoverflow.com/questions/56778211/error-message-mkvirtualenv-is-not-recognized-as-an-internal-or-external-command
+
+For Python 3.3 or newer, Commands for installing, creating and activate virtual environment has been changed.
+
+You can install virtual environment using pip:
+py -m pip install --user virtualenv
+
+For creating new environment:
+py -m venv myproject Djpyenv
+
+To activate your virtual environment:
+.\myproject\Scripts\activate
+
+After activating virtual environment, You’ll see “(myproject)” next to the command prompt.
+
+Cmnds that I used here
+
+4. In Vs code:
+	Add jinja extn
+
+5. pip install Django
+   pip install psycopg2
+   pip install Pillow
+
+6. Django Superuser for ADmin page
+	python manage.py createsuperuser
+Username (leave blank to use 'm.prashanth'):
+Email address: prashanthmangena@gmail.com
+Password:Django123
+Password (again):
+Superuser created successfully.

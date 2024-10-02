@@ -1,0 +1,24 @@
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[26/Jul/2021 01:02:03] "GET / HTTP/1.1" 200 24569
+[26/Jul/2021 01:02:05] "GET /accounts/register HTTP/1.1" 200 925
+user created
+[26/Jul/2021 01:03:00] "POST /accounts/register HTTP/1.1" 302 0
+[26/Jul/2021 01:03:00] "GET / HTTP/1.1" 200 24569
+
+Django version 3.2.5, using settings 'telusko.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[26/Jul/2021 01:14:37] "GET /accounts/register HTTP/1.1" 200 925
+password not matching...
+[26/Jul/2021 01:15:21] "POST /accounts/register HTTP/1.1" 302 0
+[26/Jul/2021 01:15:21] "GET / HTTP/1.1" 200 24569
+
+
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "F:\Prashanth disk(f)\VS Code projects\Django\DjTelusko\telusko\accounts\urls.py", line 3, in <module>
+    from . import views
+  File "F:\Prashanth disk(f)\VS Code projects\Django\DjTelusko\telusko\accounts\views.py", line 19
+    elif User.objects.filter(email=email).exists(?):
+                                                 ^
+SyntaxError: invalid syntax
