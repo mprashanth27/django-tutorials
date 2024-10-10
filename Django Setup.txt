@@ -37,3 +37,6 @@ Email address: prashanthmangena@gmail.com
 Password:Django123
 Password (again):
 Superuser created successfully.
+
+7. To save pip list in a file use:
+pip freeze > requirements.txt
