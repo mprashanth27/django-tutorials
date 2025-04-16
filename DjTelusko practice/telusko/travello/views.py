@@ -22,4 +22,5 @@ def index(request): #accepts a request and returns
     dest3.img = "destination_3.jpg"
     dest3.price = 679
 
-    return render(request, 'index.html', {'dest1': dest1, 'dest2': dest2, 'dest3': dest3})
+    dests = [dest1, dest2, dest3]
+    return render(request, 'index.html', {'dests': dests})
