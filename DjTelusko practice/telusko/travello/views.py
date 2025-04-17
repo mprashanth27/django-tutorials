@@ -9,18 +9,21 @@ def index(request): #accepts a request and returns
     dest1.desc = "The City That Never Sleeps"
     dest1.img = "destination_1.jpg"
     dest1.price = 700
+    dest1.offer = False
 
     dest2 = Destination()
     dest2.name = "Indonesia"
     dest2.desc = "Bhinneka Tunggal Ika"
     dest2.img = "destination_2.jpg"
     dest2.price = 578
+    dest2.offer = True
 
     dest3 = Destination()
     dest3.name = "San Francisco"
     dest3.desc = "The City that Knows How"
     dest3.img = "destination_3.jpg"
     dest3.price = 679
+    dest3.offer = False
 
     dests = [dest1, dest2, dest3]
     return render(request, 'index.html', {'dests': dests})
